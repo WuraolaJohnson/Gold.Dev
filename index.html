@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GOLD.DEV — Frontend Web Developer</title>
+  <meta name="description"
+    content="Frontend web developer portfolio — turning designs into responsive, functional interfaces.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+  <div class="scroll-progress" id="scrollProgress"></div>
+
+  <!-- ============ NAVIGATION ============ -->
+  <header class="nav" id="nav">
+    <div class="nav-inner">
+      <a href="#home" class="nav-logo">GOLD<span class="nav-logo-dot">.DEV</span></a>
+
+      <nav class="nav-links" id="navLinks">
+        <a href="#home" class="nav-link">Home</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#experience" class="nav-link">Experience</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+
+      <a href="#contact" class="btn btn-nav">Let's Work Together</a>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false" aria-controls="mobileMenu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="#home" class="mobile-link">Home</a>
+      <a href="#about" class="mobile-link">About</a>
+      <a href="#skills" class="mobile-link">Skills</a>
+      <a href="#projects" class="mobile-link">Projects</a>
+      <a href="#experience" class="mobile-link">Experience</a>
+      <a href="#contact" class="mobile-link">Contact</a>
+      <a href="#contact" class="btn btn-primary mobile-cta">Let's Work Together</a>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ============ HERO ============ -->
+    <section class="hero" id="home">
+      <div class="hero-inner">
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="eyebrow-mark">//</span> frontend web developer</p>
+          <h1 class="hero-heading">
+            Turning designs into<br>
+            interfaces that <em>actually ship.</em>
+          </h1>
+          <p class="hero-sub">
+            I'm <strong>Wuraola Johnson</strong> — I take a Figma file, or just an idea, and build it
+            into a responsive, accessible website that works exactly the way it looks.
+          </p>
+          <div class="hero-actions">
+            <a href="#projects" class="btn btn-primary">View My Work</a>
+            <a href="#contact" class="btn btn-ghost">Let's Talk</a>
+          </div>
+        </div>
+
+        <div class="hero-visual" aria-hidden="true">
+          <div class="editor-window">
+            <div class="window-bar">
+              <div class="window-dots"><span></span><span></span><span></span></div>
+              <div class="window-tabs">
+                <span class="tab active">app.jsx</span>
+                <span class="tab">style.css</span>
+              </div>
+            </div>
+            <pre class="editor-body"><code><span class="c-line"><span class="c-kw">function</span> <span class="c-fn">Hero</span>() {</span>
+<span class="c-line">  <span class="c-kw">return</span> (</span>
+<span class="c-line">    &lt;<span class="c-tag">section</span>&gt;</span>
+<span class="c-line">      &lt;<span class="c-tag">h1</span>&gt;Hello, world&lt;/<span class="c-tag">h1</span>&gt;</span>
+<span class="c-line">      &lt;<span class="c-tag">Button</span> <span class="c-attr">variant</span>=<span class="c-str">"primary"</span> /&gt;</span>
+<span class="c-line">    &lt;/<span class="c-tag">section</span>&gt;</span>
+<span class="c-line">  );</span>
+<span class="c-line">}<span class="type-cursor" id="typeCursor">|</span></span></code></pre>
+          </div>
+
+          <div class="browser-window">
+            <div class="window-bar browser-bar">
+              <div class="window-dots"><span></span><span></span><span></span></div>
+              <div class="browser-url">yoursite.dev</div>
+            </div>
+            <div class="browser-body">
+              <div class="mock-nav"></div>
+              <div class="mock-heading"></div>
+              <div class="mock-line short"></div>
+              <div class="mock-button">Hello, world</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ ABOUT ============ -->
+    <section class="about" id="about">
+      <div class="section-inner about-grid">
+        <div class="about-visual">
+          <div class="stack-frame">
+            <div class="frame-row">
+              <button class="frame-chip" type="button" data-skill="figma" aria-pressed="false">Figma</button>
+              <span class="frame-arrow">→</span>
+              <button class="frame-chip frame-chip-accent" type="button" data-skill="html-css"
+                aria-pressed="true">HTML/CSS</button>
+              <span class="frame-arrow">→</span>
+              <button class="frame-chip" type="button" data-skill="react" aria-pressed="false">React</button>
+            </div>
+            <div class="frame-divider"></div>
+            <ul class="frame-checklist" id="frameChecklist" aria-live="polite">
+              <li><span class="check">✓</span> Pixel-accurate layout</li>
+              <li><span class="check">✓</span> Responsive across breakpoints</li>
+              <li><span class="check">✓</span> Semantic, accessible markup</li>
+              <li><span class="check">✓</span> Clean, readable code</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="about-copy">
+          <p class="eyebrow"><span class="eyebrow-mark">//</span> about</p>
+          <h2 class="section-heading">I like the moment a static design becomes something you can click.</h2>
+          <p class="body-text">
+            My focus is turning a design — whether it's a full Figma file or a rough idea —
+            into a working website. That means matching the details that make a design feel
+            intentional: spacing, type, motion, and the small interactions that don't show up
+            until you actually use the thing.
+          </p>
+          <p class="body-text">
+            I care about building interfaces that hold up across screen sizes, write markup
+            that makes sense to the next person who opens the file, and I'm comfortable
+            picking up new tools when a project calls for them.
+          </p>
+          <ul class="about-points">
+            <li>Design-to-code implementation</li>
+            <li>Responsive, mobile-first builds</li>
+            <li>Attention to interaction detail</li>
+            <li>Clean, maintainable code</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SKILLS ============ -->
+    <section class="skills" id="skills">
+      <div class="section-inner">
+        <p class="eyebrow"><span class="eyebrow-mark">//</span> skills</p>
+        <h2 class="section-heading">Tools I build with.</h2>
+
+        <div class="skills-grid">
+          <div class="skill-group">
+            <h3 class="skill-group-title">Frontend</h3>
+            <div class="skill-tags">
+              <span class="skill-tag"><span class="skill-badge">HTML</span>HTML</span>
+              <span class="skill-tag"><span class="skill-badge">CSS</span>CSS</span>
+              <span class="skill-tag"><span class="skill-badge">JS</span>JavaScript</span>
+              <span class="skill-tag"><span class="skill-badge">TS</span>TypeScript</span>
+              <span class="skill-tag"><span class="skill-badge">R</span>React</span>
+            </div>
+          </div>
+
+          <div class="skill-group">
+            <h3 class="skill-group-title">Frameworks &amp; Libraries</h3>
+            <div class="skill-tags">
+              <span class="skill-tag"><span class="skill-badge">BS</span>Bootstrap</span>
+              <span class="skill-tag"><span class="skill-badge">TW</span>Tailwind CSS</span>
+            </div>
+          </div>
+
+          <div class="skill-group">
+            <h3 class="skill-group-title">Tools</h3>
+            <div class="skill-tags">
+              <span class="skill-tag"><span class="skill-badge">GIT</span>Git</span>
+              <span class="skill-tag"><span class="skill-badge">GH</span>GitHub</span>
+              <span class="skill-tag"><span class="skill-badge">FIG</span>Figma</span>
+              <span class="skill-tag"><span class="skill-badge">DEV</span>Chrome DevTools</span>
+            </div>
+          </div>
+
+          <div class="skill-group">
+            <h3 class="skill-group-title">CMS</h3>
+            <div class="skill-tags">
+              <span class="skill-tag"><span class="skill-badge">WP</span>WordPress</span>
+              <span class="skill-tag"><span class="skill-badge">EL</span>Elementor</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ PROJECTS ============ -->
+    <section class="projects" id="projects">
+      <div class="section-inner">
+        <p class="eyebrow"><span class="eyebrow-mark">//</span> projects</p>
+        <h2 class="section-heading">Selected work.</h2>
+
+        <!-- Featured project -->
+        <article class="project-featured">
+          <div class="project-media">
+            <div class="mini-browser">
+              <div class="window-bar browser-bar">
+                <div class="window-dots"><span></span><span></span><span></span></div>
+                <div class="browser-url">COSME</div>
+              </div>
+              <iframe class="project-iframe" src="https://wuraolajohnson.github.io/COSME-site/"
+                title="Featured project website preview" loading="lazy"></iframe>
+            </div>
+          </div>
+          <div class="project-info">
+            <span class="project-label">Featured project</span>
+            <h3 class="project-title">COSME</h3>
+            <p class="project-desc">A modern e-commerce platform for selling beauty products online.</p>
+            <div class="project-tags">
+              <span class="tag">HTML</span>
+              <span class="tag">CSS</span>
+              <span class="tag">JavaScript</span>
+            </div>
+            <div class="project-actions">
+              <a href="https://wuraolajohnson.github.io/COSME-site/" class="btn btn-primary btn-sm">View Project</a>
+              <a href="https://github.com/wuraolajohnson/COSME-site" class="btn btn-ghost btn-sm">GitHub</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Supporting projects -->
+        <div class="project-row">
+          <article class="project-card">
+            <div class="project-media project-media-sm">
+              <div class="mini-browser">
+                <div class="window-bar browser-bar">
+                  <div class="window-dots"><span></span><span></span><span></span></div>
+                  <div class="browser-url">Waystream</div>
+                </div>
+                <iframe class="project-iframe" src="https://wuraolajohnson.github.io/Waystream/"
+                  title="Project website preview" loading="lazy"></iframe>
+              </div>
+            </div>
+            <span class="project-label">Project</span>
+            <h3 class="project-title project-title-sm">Waystream</h3>
+            <p class="project-desc">A replica of a popular streaming service.</p>
+            <div class="project-tags">
+              <span class="tag">HTML</span>
+              <span class="tag">CSS</span>
+              <span class="tag">JavaScript</span>
+            </div>
+            <div class="project-actions">
+              <a href="https://wuraolajohnson.github.io/Waystream/" class="btn btn-ghost btn-sm">View Project</a>
+              <a href="https://github.com/wuraolajohnson/Waystream" class="btn btn-ghost btn-sm">GitHub</a>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-media project-media-sm">
+              <div class="mini-browser">
+                <div class="window-bar browser-bar">
+                  <div class="window-dots"><span></span><span></span><span></span></div>
+                  <div class="browser-url">Performance-Driven Gym</div>
+                </div>
+                <iframe class="project-iframe" src="https://wuraolajohnson.github.io/Performance-Driven-Gym/About.html"
+                  title="Project website preview" loading="lazy"></iframe>
+              </div>
+            </div>
+            <span class="project-label">Project</span>
+            <h3 class="project-title project-title-sm">Performance-Driven Gym</h3>
+            <p class="project-desc">A modern fitness website bringing figma design to life.</p>
+            <div class="project-tags">
+              <span class="tag">HTML</span>
+              <span class="tag">CSS</span>
+              <span class="tag">JavaScript</span>
+            </div>
+            <div class="project-actions">
+              <a href="https://wuraolajohnson.github.io/Performance-Driven-Gym/" class="btn btn-ghost btn-sm">View
+                Project</a>
+              <a href="https://github.com/wuraolajohnson/Performance-Driven-Gym" class="btn btn-ghost btn-sm">GitHub</a>
+              <a href="https://www.figma.com/site/5vH4o46LtqgKSQ42qGiNXo/Performance-Driven-Gym--Community-?node-id=0-1&p=f&t=nhPKhFLCGQQxsKAO-0"
+                class="btn btn-ghost btn-sm">Figma</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ EXPERIENCE ============ -->
+    <section class="experience" id="experience">
+      <div class="section-inner">
+        <p class="eyebrow"><span class="eyebrow-mark">//</span> experience</p>
+        <h2 class="section-heading">Where I've worked.</h2>
+
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <div class="timeline-head">
+                <h3 class="timeline-role">Frontend Web Development</h3>
+                <span class="timeline-date">May 2025 — Oct 2025</span>
+              </div>
+              <p class="timeline-company">Zyonel Technologies · Lagos, Nigeria</p>
+              <ul class="timeline-list">
+                <li>Translated Figma UI/UX designs into responsive, production-ready web pages using HTML, CSS, and
+                  JavaScript.</li>
+                <li>Implemented Bootstrap, Tailwind CSS, and modern CSS techniques for consistent cross-device
+                  compatibility.</li>
+                <li>Collaborated on professional website interfaces, focusing on layout structure, reusable components,
+                  and accessibility.</li>
+                <li>Broke complex designs into modular tasks to improve workflow efficiency and project development
+                  cycles.</li>
+                <li>Used Git and GitHub for version control and clean code management.</li>
+              </ul>
+              <div class="project-tags">
+                <span class="tag">HTML</span>
+                <span class="tag">CSS</span>
+                <span class="tag">JavaScript</span>
+                <span class="tag">Figma</span>
+                <span class="tag">Git</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ APPROACH ============ -->
+    <section class="approach" id="approach">
+      <div class="section-inner">
+        <p class="eyebrow"><span class="eyebrow-mark">//</span> how I work</p>
+        <h2 class="section-heading">From design file to deployed site.</h2>
+
+        <div class="approach-list">
+          <div class="approach-item">
+            <span class="approach-index">01</span>
+            <div class="approach-body">
+              <h3 class="approach-title">Design to code</h3>
+              <p class="approach-desc">Turning Figma designs into accurate, functional interfaces — matching spacing,
+                type, and detail.</p>
+            </div>
+          </div>
+          <div class="approach-item">
+            <span class="approach-index">02</span>
+            <div class="approach-body">
+              <h3 class="approach-title">Responsive development</h3>
+              <p class="approach-desc">Building layouts that hold up across desktop, tablet, and mobile — not just
+                scaled-down versions.</p>
+            </div>
+          </div>
+          <div class="approach-item">
+            <span class="approach-index">03</span>
+            <div class="approach-body">
+              <h3 class="approach-title">Interactive experiences</h3>
+              <p class="approach-desc">Adding useful interaction and motion with JavaScript and React, where it actually
+                helps the user.</p>
+            </div>
+          </div>
+          <div class="approach-item">
+            <span class="approach-index">04</span>
+            <div class="approach-body">
+              <h3 class="approach-title">Clean implementation</h3>
+              <p class="approach-desc">Writing organized, maintainable frontend code that the next developer can
+                actually work with.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CONTACT ============ -->
+    <section class="contact" id="contact">
+      <div class="section-inner contact-inner">
+        <p class="eyebrow"><span class="eyebrow-mark">//</span> contact</p>
+        <h2 class="contact-heading">Have a design or idea?<br>Let's build it.</h2>
+        <p class="contact-sub">
+          I'm currently open to internships, junior frontend roles, and freelance projects.
+          The fastest way to reach me is email or WhatsApp.
+        </p>
+        <div class="contact-actions">
+          <a href="mailto:wuraolajohnson37@gmail.com" class="btn btn-primary btn-lg">Send Me an Email</a>
+          <a href="https://wa.link/eorp8b" class="btn btn-ghost btn-lg">
+            <svg class="social-icon" aria-hidden="true" viewBox="0 0 24 24">
+              <path
+                d="M20.5 3.5A11.8 11.8 0 0 0 12.1 0C5.6 0 .3 5.3.3 11.8c0 2.1.5 4.2 1.6 6L.2 24l6.3-1.7a11.8 11.8 0 0 0 5.6 1.4h.1c6.5 0 11.8-5.3 11.8-11.8 0-3.2-1.3-6.2-3.5-8.4ZM12.2 21.7h-.1c-1.8 0-3.6-.5-5.1-1.4l-.4-.2-3.7 1 1-3.6-.2-.4a9.9 9.9 0 0 1-1.5-5.3c0-5.5 4.5-10 10-10 2.7 0 5.2 1 7.1 2.9a9.9 9.9 0 0 1 2.9 7.1c0 5.4-4.5 9.9-10 9.9Zm5.4-7.4c-.3-.2-1.8-.9-2.1-1-.3-.1-.5-.2-.7.2-.2.3-.8 1-.9 1.2-.2.2-.3.2-.6.1-1.7-.8-2.8-1.5-3.9-3.3-.3-.5.3-.5.8-1.7.1-.2.1-.4 0-.6-.1-.2-.7-1.6-.9-2.2-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.6.1-.9.4-.3.3-1.1 1.1-1.1 2.7s1.1 3.1 1.3 3.3c.2.2 2.2 3.4 5.4 4.8 2 .9 2.8 1 3.8.8.6-.1 1.8-.7 2-1.4.3-.7.3-1.3.2-1.4-.2-.1-.4-.2-.7-.4Z" />
+            </svg>
+            Message Me on WhatsApp
+          </a>
+          <div class="contact-social">
+            <a href="https://github.com/WuraolaJohnson" class="social-link" target="_blank" rel="noopener"><svg
+                class="social-icon" aria-hidden="true" viewBox="0 0 24 24">
+                <path
+                  d="M12 .5a12 12 0 0 0-3.8 23.4c.6.1.8-.3.8-.6v-2.2c-3.4.7-4.1-1.4-4.1-1.4-.5-1.4-1.3-1.8-1.3-1.8-1.1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1.1 1.8 2.8 1.3 3.5 1 .1-.8.4-1.3.8-1.6-2.7-.3-5.5-1.4-5.5-6A4.7 4.7 0 0 1 5.6 9c-.1-.3-.5-1.6.1-3.3 0 0 1-.3 3.4 1.3a11.7 11.7 0 0 1 6.2 0c2.4-1.6 3.4-1.3 3.4-1.3.6 1.7.2 3 .1 3.3a4.7 4.7 0 0 1 1.3 3.3c0 4.6-2.8 5.7-5.5 6 .4.3.8 1 .8 2v2.9c0 .3.2.7.8.6A12 12 0 0 0 12 .5Z" />
+              </svg>GitHub</a>
+            <a href="https://www.linkedin.com/in/wuraola-johnson-30487a322" class="social-link" target="_blank"
+              rel="noopener"><svg class="social-icon" aria-hidden="true" viewBox="0 0 24 24">
+                <path
+                  d="M4.7 3.3A2.3 2.3 0 1 1 4.7 8a2.3 2.3 0 0 1 0-4.7ZM2.7 9.8h4v11.9h-4V9.8Zm6.5 0h3.8v1.6h.1c.5-.9 1.7-2 3.6-2 3.9 0 4.6 2.6 4.6 6v6.3h-4v-5.6c0-1.3 0-3-1.9-3s-2.2 1.5-2.2 2.9v5.7h-4V9.8Z" />
+              </svg>LinkedIn</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="section-inner footer-inner">
+      <div class="footer-brand">
+        <a href="#home" class="nav-logo">GOLD<span class="nav-logo-dot">.DEV</span></a>
+        <p class="footer-desc">Frontend web developer building responsive, functional interfaces from design to code.
+        </p>
+      </div>
+
+      <nav class="footer-links">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#experience">Experience</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <div class="footer-social">
+        <a href="https://github.com/WuraolaJohnson" target="_blank" rel="noopener" aria-label="GitHub"
+          title="GitHub"><svg class="social-icon" aria-hidden="true" viewBox="0 0 24 24">
+            <path
+              d="M12 .5a12 12 0 0 0-3.8 23.4c.6.1.8-.3.8-.6v-2.2c-3.4.7-4.1-1.4-4.1-1.4-.5-1.4-1.3-1.8-1.3-1.8-1.1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1.1 1.8 2.8 1.3 3.5 1 .1-.8.4-1.3.8-1.6-2.7-.3-5.5-1.4-5.5-6A4.7 4.7 0 0 1 5.6 9c-.1-.3-.5-1.6.1-3.3 0 0 1-.3 3.4 1.3a11.7 11.7 0 0 1 6.2 0c2.4-1.6 3.4-1.3 3.4-1.3.6 1.7.2 3 .1 3.3a4.7 4.7 0 0 1 1.3 3.3c0 4.6-2.8 5.7-5.5 6 .4.3.8 1 .8 2v2.9c0 .3.2.7.8.6A12 12 0 0 0 12 .5Z" />
+          </svg></a>
+        <a href="https://www.linkedin.com/in/wuraola-johnson-30487a322" target="_blank" rel="noopener"
+          aria-label="LinkedIn" title="LinkedIn"><svg class="social-icon" aria-hidden="true" viewBox="0 0 24 24">
+            <path
+              d="M4.7 3.3A2.3 2.3 0 1 1 4.7 8a2.3 2.3 0 0 1 0-4.7ZM2.7 9.8h4v11.9h-4V9.8Zm6.5 0h3.8v1.6h.1c.5-.9 1.7-2 3.6-2 3.9 0 4.6 2.6 4.6 6v6.3h-4v-5.6c0-1.3 0-3-1.9-3s-2.2 1.5-2.2 2.9v5.7h-4V9.8Z" />
+          </svg></a>
+        <a href="mailto:wuraolajohnson37@gmail.com" aria-label="Email" title="Email"><svg class="social-icon"
+            aria-hidden="true" viewBox="0 0 24 24">
+            <path d="M2 4h20v16H2V4Zm2 2v.5l8 5 8-5V6l-8 5-8-5Z" />
+          </svg></a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; <span id="year"></span> GOLD.DEV All rights reserved.</p>
+
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
